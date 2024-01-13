@@ -7,12 +7,14 @@ import org.glenchiridza.task_application.dto.requests.TaskUpdateRequest
 import org.glenchiridza.task_application.exceptions.BadRequestException
 import org.glenchiridza.task_application.exceptions.TaskNotFoundException
 import org.glenchiridza.task_application.models.Task
+import org.springframework.stereotype.Service
 import org.springframework.util.ReflectionUtils
 import java.lang.reflect.Field
 import java.util.Collections
 import java.util.stream.Collectors
 import kotlin.reflect.full.memberProperties
 
+@Service
 class TaskService(private val taskRepository: TaskRepository) {
 
     private fun convertEntityToDto(task: Task):TaskDto{
