@@ -3,6 +3,7 @@ package org.glenchiridza.task_application.models
 import jakarta.persistence.*
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotNull
+import org.glenchiridza.task_application.enums.Priority
 import java.time.LocalDateTime
 
 
@@ -33,7 +34,7 @@ class Task {
 
     @NotNull
     @Enumerated(EnumType.STRING)
-    var priority:Priority = Priority.LOW
+    var priority: Priority = Priority.LOW
 
 
 
