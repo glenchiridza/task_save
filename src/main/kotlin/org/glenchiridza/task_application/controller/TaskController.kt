@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("api")
+@CrossOrigin("*")
 class TaskController(private val service: TaskService) {
 
     @GetMapping("all-tasks")
