@@ -12,8 +12,6 @@ data class TaskCreateRequest (
 
     val isTaskPending:Boolean,
 
-    @NotBlank(message = "created date can't be empty")
-    val createdDate:LocalDateTime,
 
     val priority: Priority
 )

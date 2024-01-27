@@ -29,7 +29,7 @@ class Task {
     @Column(name = "created_date", nullable = false)
     var createdDate:LocalDateTime = LocalDateTime.now()
 
-    @Column(name = "updated_date", nullable = false)
+    @Column(name = "updated_date", nullable = true)
     var updatedDate:LocalDateTime = LocalDateTime.now()
 
     @NotNull

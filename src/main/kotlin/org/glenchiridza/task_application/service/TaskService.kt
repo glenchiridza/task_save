@@ -32,7 +32,6 @@ class TaskService(private val taskRepository: TaskRepository) {
         task.description = taskRequest.description
         task.isReminderOn = taskRequest.isReminderOn
         task.isTaskPending = taskRequest.isTaskPending
-        task.createdDate = taskRequest.createdDate
         task.priority = taskRequest.priority
     }
 

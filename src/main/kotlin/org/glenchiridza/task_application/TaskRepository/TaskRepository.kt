@@ -4,6 +4,8 @@ import org.glenchiridza.task_application.models.Task
 import org.springframework.context.annotation.Description
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
+import org.springframework.stereotype.Repository
+
 
 interface TaskRepository :JpaRepository<Task,Long> {
 
